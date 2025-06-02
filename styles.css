@@ -1,0 +1,139 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    color: #e4007c;
+    padding: 0;
+    cursor: url('https://cur.cursors-4u.net/games/gam-10/gam985.cur'), auto;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    z-index: 1000;
+    border-bottom: 4px double #e4007c;
+    box-shadow: 0 2px 10px rgba(0, 255, 204, 0.2);
+}
+nav a {
+    color: #e4007c;
+    text-decoration: none;
+    padding: 8px 16px;
+    background: rgba(0, 255, 204, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    background:#e4007c;
+    color: #000;
+}
+section {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 120px 30px 60px;
+    background-color: #1c1c1c;
+    border: 3px solid #e4007c;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+    scroll-margin-top: 100px;
+}
+
+.card-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.card-link:hover .card h3,
+.card-link:hover p{
+    color: #ff69b4;
+}
+    
+h1, h2, h3 {
+    color: #e4007c;
+    margin-bottom: 20px;
+}
+p, a {
+    color: #ccffee;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #e4007c;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 255, 204, 0.2);
+    transition: background 0.3s;
+}
+.btn:hover {
+    background-color: #e4007c;
+}
+.card {
+    background-color: #222;
+    padding: 20px;
+    border: 2px dashed #e4007c;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.15);
+}
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #888;
+    font-size: 12px;
+}
+
+.certi-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.certi-link:hover p{
+    color: #ff69b4;
+}
+
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skills-list span {
+    cursor: url('https://cur.cursors-4u.net/games/gam-10/gam985.cur'), auto;
+  background-color: #00ffcc22;
+  color: #e4007c;
+  font-family: 'Press Start 2P', monospace;
+  padding: 10px 14px;
+  border: 2px solid #e4007c;
+  border-radius: 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s;
+}
+
+.skills-list span:hover {
+     cursor: url('https://cur.cursors-4u.net/games/gam-10/gam985.cur'), auto;
+  background-color: #ff69b4;
+  color: #000;
+  transform: scale(1.05);
+  cursor: default;
+}
+
+
+    
