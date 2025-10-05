@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minecraft Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: url('https://i.imgur.com/W7p1K6x.png'); /* pixel grass texture */
+      background-size: 64px 64px;
+      color: #fff;
+    }
+
+    /* Centered container */
+    .container {
+      max-width: 960px;
+      margin: 80px auto 0;
+      background-color: #3a3a3a;
+      border: 8px solid #2b2b2b;
+      box-shadow: 0 0 0 8px #0f0f0f;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #2e2e2e;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      border-bottom: 4px solid #1b1b1b;
+    }
+
+    nav a {
+      color: #aaffaa;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 0.75rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #ffff55;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 40px;
+      border-bottom: 4px solid #1b1b1b;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #ffff55;
+      text-shadow: 1px 1px #000;
+    }
+
+    p {
+      font-size: 0.75rem;
+      color: #dddddd;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* Button style (like Minecraft GUI) */
+    button, .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #555;
+      color: #fff;
+      border: 3px solid #222;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover, .button:hover {
+      background-color: #777;
+      color: #ffff55;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.6rem;
+      color: #aaa;
+    }
+
+    @media(max-width: 768px) {
+      .container {
+        margin: 60px 10px 0;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Navbar -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home">
+      <h1>Welcome to My Minecraft Realm</h1>
+      <p>Hey! I'm a developer adventurer who builds digital worlds just like in Minecraft. Explore my skills, projects, and how we can team up to build something epic!</p>
+    </section>
+
+    <section id="about">
+      <h1>About the Builder</h1>
+      <p>I mine bugs and craft code! From HTML villages to CSS castles, I love designing experiences that feel as rewarding as finding diamonds.</p>
+    </section>
+
+    <section id="projects">
+      <h1>Crafted Projects</h1>
+      <p>📦 Survival Inventory UI<br/>🛠️ Redstone-like Logic Sim<br/>🧱 Pixel Block Gallery<br/>⚔️ Mini Web RPG</p>
+    </section>
+
+    <section id="contact">
+      <h1>Connect With Me</h1>
+      <p>Wanna build together? Drop a message at <br/> <strong>steve@blockmail.com</strong><br/>Or hit me up on GitHub / LinkedIn!</p>
+      <a class="button" href="mailto:steve@blockmail.com">Send Message</a>
+    </section>
+
+    <footer>
+      &copy; 2025 BlockCoded Portfolio. Crafted with pixels and passion.
+    </footer>
+
+  </div>
+
+</body>
+</html>
